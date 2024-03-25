@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+    font-size: 20px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +11,7 @@
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 100vw;
     height: 100vh;
     background-image: url(images/pexels-rovenimagescom-949587.jpg);
@@ -17,19 +21,19 @@
     position: relative;
 }
 
-.content{
+.content {
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
     color: #fff;
 }
 
-.content h1{
-    font-size: 64px;
+.content h1 {
+    font-size: 3.2rem;
     font-weight: 600;
 }
 
-.content h1 span{
+.content h1 span {
     color: #ff3753;
 }
 
@@ -37,30 +41,30 @@
     background: transparent;
     border: 2px solid #fff;
     outline: none;
-    padding: 12px 25px;
+    padding: 0.6rem 1.25rem;
     color: #fff;
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
-.content button i{
-    margin-left: 10px;
+.content button i {
+    margin-left: 0.5rem;
 }
 
-.launch-time{
+.launch-time {
     display: flex;
 }
 
-.launch-time div{
-    flex-basis: 100px;
+.launch-time div {
+    flex-basis: 5rem;
 }
 
-.launch-time div p{
-    font-size: 60px;
-    margin-bottom: -14px;
+.launch-time div p {
+    font-size: 3rem;
+    margin-bottom: -0.7rem;
 }
 
-.rocket{
-    width: 250px;
+.rocket {
+    width: 12.5rem;
     position: absolute;
     right: 10%;
     bottom: 0;
@@ -69,15 +73,42 @@
 }
 
 @keyframes rocket {
-    0%{
+    0% {
         bottom: 0;
         opacity: 0;
     }
-    20%{
+
+    20% {
         opacity: 1;
     }
-    100%{
+
+    100% {
         bottom: 105%;
-       
+
+    }
+}
+
+@media (max-width:1400px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .rocket {
+        display: none;
+    }
+}
+
+@media (max-width:680px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width:550px) {
+    html {
+        font-size: 10px;
     }
 }
